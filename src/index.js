@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom'
 import App from './router/router';
-
+import '@static/css/index.css';
 ReactDOM.render(
     <React.StrictMode>
       <App />

@@ -39,10 +39,12 @@ module.exports = function(env, argv) {
                     exclude: /node_modules/,
                     use: [
                         {
+                            loader: 'style-loader'
+                        },
+                        {
                             loader: 'css-loader',
                             options: {
-                                importLoaders: 1,
-                                esModule: false
+                                importLoaders: 1
                             }
                         },
                         {
