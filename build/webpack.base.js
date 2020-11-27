@@ -46,7 +46,8 @@ module.exports = function(env, argv) {
                             options: {
                                 importLoaders: 1,
                                 modules: {
-                                    localIdentName: '[name]__[local]__[hash:base64:5]'
+                                    auto: (resourcePath) => resourcePath.endsWith('.module.css'), //css文件匹配规则
+                                    localIdentName: '[name]__[local]__[hash:base64:5]' //样式名转化规则
                                 }
                             }
                         },
